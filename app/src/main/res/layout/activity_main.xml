@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/black"
+    >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="531dp"
+        android:background="@color/tema"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="1040dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/latar"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/logo1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="Registration Form"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:layout_width="400dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:background="#ACA1A1" />
+
+                <TextView
+                    android:layout_width="146dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:paddingTop="20dp"
+                    android:text="Nama Pemilik:"
+                    android:textColor="#151414"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/userName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="12sp"
+                    android:paddingLeft="15sp"
+                    android:layout_marginTop="8sp"
+                    android:height="45dp"
+                    android:background="@drawable/form" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="No. Telepon:"
+                    android:textColor="#151414"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/userContact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="15sp"
+                    android:layout_marginHorizontal="12sp"
+                    android:layout_marginTop="8sp"
+                    android:height="45dp"
+                    android:background="@drawable/form" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:paddingTop="10dp"
+                    android:text="Jenis Hewan:"
+                    android:textColor="#151414"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/jenishewan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="15sp"
+                    android:layout_marginHorizontal="12sp"
+                    android:layout_marginTop="8sp"
+                    android:height="45dp"
+                    android:background="@drawable/form" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="17dp"
+                    android:text="Jenis Kelamin"
+                    android:textColor="#151414"
+                    android:textSize="20dp" />
+
+                <RadioGroup
+                    android:layout_width="213dp"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <RadioButton
+                        android:id="@+id/Jantan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Jantan "
+                        android:textSize="20dp" />
+
+                    <RadioButton
+                        android:id="@+id/Betina"
+                        android:layout_width="105dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingRight="6sp"
+                        android:text="Betina"
+                        android:textSize="20dp" />
+                </RadioGroup>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="20dp"
+                    android:text="Ukuran Tubuh"
+                    android:textColor="#151414"
+                    android:textSize="20dp" />
+
+                <RadioGroup
+                    android:layout_width="292dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/KECIL"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:text="Kecil"
+                        android:textSize="20dp" />
+
+                    <CheckBox
+                        android:id="@+id/SEDANG"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="6sp"
+                        android:text="Sedang"
+                        android:textSize="20dp" />
+
+                    <CheckBox
+                        android:id="@+id/BESAR"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="6sp"
+                        android:text="Besar"
+                        android:textSize="20dp" />
+                </RadioGroup>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Usia"
+                    android:textColor="#151414"
+                    android:textSize="20dp" />
+
+                <SeekBar
+                    android:id="@+id/usia"
+                    android:layout_width="348dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:max="10"
+                    android:min="1" />
+                //keterangan usia
+
+
+                <TextView
+                    android:id="@+id/us"
+                    android:layout_width="131dp"
+                    android:layout_height="31dp"
+                    android:layout_below="@+id/usia"
+                    android:layout_marginLeft="95dp"
+                    android:paddingLeft="50dp"
+                    android:text="Tahun"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Deskripsi"
+                    android:textColor="#151414"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/usercomment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="15sp"
+                    android:layout_marginHorizontal="12sp"
+                    android:layout_marginTop="8sp"
+                    android:height="90sp"
+                    android:background="#55FFFFFF"
+                    android:hint="Enter Deskripsi.." />
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:onClick="kirim"
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/button"
+                    android:text="Submit"
+                    android:textColor="#FFFFFF"
+                    app:backgroundTint="#ED8F46" />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
+
+
+
+

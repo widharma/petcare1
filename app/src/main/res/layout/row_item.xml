@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/tpform"
+        android:layout_width="393dp"
+        android:layout_height="331dp"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="311dp"
+            android:background="@drawable/border4"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical"
+                android:paddingLeft="54dp"
+                android:paddingTop="5sp">
+
+                <TextView
+                    android:id="@+id/tpnama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="@string/nama" />
+
+                <TextView
+                    android:id="@+id/tptelp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="@string/notelp" />
+
+                <TextView
+                    android:id="@+id/tpjenishwn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="@string/jnshewan" />
+
+                <TextView
+                    android:id="@+id/tpjenkel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="@string/gender" />
+
+                <TextView
+                    android:id="@+id/tpuktubuh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="@string/uktubuh" />
+
+                <TextView
+                    android:id="@+id/tpumur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="Umur" />
+
+                <TextView
+                    android:id="@+id/tpdeskripsi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="@string/deskripsi" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="211dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingTop="5sp">
+
+                <TextView
+                    android:id="@+id/nama"
+                    android:layout_width="166dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/form"
+                    android:textSize="17dp"
+                    android:paddingLeft="15sp"
+                    android:fontFamily="@font/nunito"
+                    android:text="nama" />
+
+                <TextView
+                    android:id="@+id/telepon"
+                    android:layout_width="166dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/form"
+                    android:textSize="17dp"
+                    android:paddingLeft="15sp"
+                    android:fontFamily="@font/nunito"
+                    android:text="telp" />
+
+                <TextView
+                    android:id="@+id/jenhwn"
+                    android:layout_width="166dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/form"
+                    android:textSize="17dp"
+                    android:paddingLeft="15sp"
+                    android:fontFamily="@font/nunito"
+                    android:text="jenhwn" />
+
+                <TextView
+                    android:id="@+id/jenkel"
+                    android:layout_width="166dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/form"
+                    android:textSize="17dp"
+                    android:paddingLeft="15sp"
+                    android:fontFamily="@font/nunito"
+                    android:text="jenkel" />
+
+                <TextView
+                    android:id="@+id/uktbh"
+                    android:layout_width="166dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="17dp"
+                    android:background="@drawable/form"
+                    android:textSize="17dp"
+                    android:paddingLeft="15sp"
+                    android:fontFamily="@font/nunito"
+                    android:text="@string/uktubuh" />
+
+                <TextView
+                    android:id="@+id/jumlahage"
+                    android:layout_width="166dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/form"
+                    android:textSize="17dp"
+                    android:paddingLeft="15sp"
+                    android:fontFamily="@font/nunito"
+                    android:text="umur" />
+
+                <TextView
+                    android:id="@+id/jnsdeskripsi"
+                    android:layout_width="166dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/form"
+                    android:textSize="17dp"
+                    android:paddingLeft="15sp"
+                    android:fontFamily="@font/nunito"
+                    android:text="deskripsi" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
